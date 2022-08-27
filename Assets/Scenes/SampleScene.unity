@@ -217,6 +217,7 @@ MonoBehaviour:
   moveDown: 274
   speed: 10
   boundY: 2.25
+  rb2d: {fileID: 0}
 --- !u!50 &397956256
 Rigidbody2D:
   serializedVersion: 4
@@ -613,8 +614,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveUp: 119
   moveDown: 115
-  speed: 10
+  speed: 6
   boundY: 2.25
+  rb2d: {fileID: 0}
 --- !u!50 &1353568654
 Rigidbody2D:
   serializedVersion: 4
@@ -760,6 +762,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   winValue: 5
   layout: {fileID: 11400000, guid: 57ca52b9849e8d341a2283e87c76acd2, type: 2}
+  theBall: {fileID: 0}
 --- !u!4 &1416460452
 Transform:
   m_ObjectHideFlags: 0
@@ -891,6 +894,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59b381d6d9cf1e2478c657ac64f1ce2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rb2d: {fileID: 0}
+  pauseVel: {x: 0, y: 0}
 --- !u!50 &1974278718
 Rigidbody2D:
   serializedVersion: 4
