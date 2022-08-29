@@ -6,6 +6,7 @@ public class BallControl : MonoBehaviour
 {
     private Rigidbody2D rb2d;
     private Vector2 pauseVel;
+    public int speed = 25;
 
     
     // Start is called before the first frame update
@@ -28,11 +29,11 @@ public class BallControl : MonoBehaviour
         float rand = Random.Range(0,2);
         if(rand < 1)
         {
-            rb2d.AddForce(new Vector2(20, Random.Range(-25,25)));
+            rb2d.AddForce(new Vector2(speed, Random.Range(-25,25)));
         }
         else
         {
-            rb2d.AddForce(new Vector2(-20, Random.Range(-25,25)));
+            rb2d.AddForce(new Vector2(-speed, Random.Range(-25,25)));
         }
     }
 
