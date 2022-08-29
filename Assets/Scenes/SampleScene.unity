@@ -1127,7 +1127,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81666224d6520594d8add3aac7ec83fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  winValue: 5
+  winValue: 10
   layout: {fileID: 11400000, guid: 57ca52b9849e8d341a2283e87c76acd2, type: 2}
 --- !u!4 &1416460452
 Transform:
