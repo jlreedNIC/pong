@@ -1,12 +1,13 @@
 # Pong
 
-This game is created as a project for CS 383 Software Engineering at the University of Idaho. It is compiled for Windows machines only.
+This game is created as a project for CS 383 Software Engineering at the University of Idaho. It is compiled using Unity for Windows computers.
 
 ## Quickstart
 
-- Download latest Release. 
-- Extract folder to desired location (i.e. Desktop)
-- Double click Pong.exe
+- Download latest Release (located to the right). 
+- Right click on folder in your Downloads and select `Extract All`.
+- Move folder to desired location (i.e. Desktop)
+- Double click `Pong.exe` inside the folder
 - Play!
 
 ### Controls
@@ -22,15 +23,24 @@ The game will go until someone reaches 10 points. Then you must hit the 'Restart
 
 ## Changing or Compiling the Code
 
-### You must have Git and Unity installed
+### You must have Unity installed before continuing
 
-- Use the following url to clone the repository into the folder of your choice: https://github.com/jlreedNIC/pong.git
-  - Using your command line program, type the following: 
-    ```
-    git clone https://github.com/jlreedNIC/pong.git
-    ```
-  - This will copy the required files into a folder labeled 'Pong' on your computer.
-- Open Unity
-- Open the Pong folder in the Unity editor.
-- You can now make any changes you like
-- Rebuild game in Unity
+- If you don't already have Unity installed, you can follow [this](https://unity.com/download) link. Follow the instruction provided for your system before continuing with this guide.
+
+### Download Source Files
+
+- Click on the latest release to the right. 
+- Download Source Code .zip file
+- When it's finished, right click on the .zip file and select `Extract All`.
+- You can now move this folder to the location of your choosing.
+- Open project in Unity
+  - Open Unity.
+  - Select `Open` and navigate to the location of your download.
+  - Select `pong-x.x` to open project.
+- You can now make changes
+- Rebuild the game to save your changes and be able to play them.
+  - Select `File`
+  - Select `Build Settings`
+  - Select which operating system you want to build for
+  - Select `Build`
+
