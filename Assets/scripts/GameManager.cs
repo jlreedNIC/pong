@@ -8,7 +8,6 @@ public class GameManager : MonoBehaviour
     public static int PlayerScore1 = 0;
     public static int PlayerScore2 = 0;
     public int winValue = 5;
-    public static bool gamePaused = false;
 
     public GUISkin layout;
 
@@ -27,26 +26,6 @@ public class GameManager : MonoBehaviour
         if(Input.GetKey("escape"))
         {
             Application.Quit();
-        }
-
-        if(Input.GetKeyDown("space"))
-        {
-            
-            gamePaused = !gamePaused;
-            PauseGame();
-        }
-    }
-
-    // pauses the game
-    void PauseGame()
-    {
-        if(gamePaused)
-        {
-            Time.timeScale = 0;
-        }
-        else 
-        {
-            Time.timeScale = 1;
         }
     }
 
@@ -86,11 +65,5 @@ public class GameManager : MonoBehaviour
             GUI.Label(new Rect(Screen.width/2 - 150, 200, 2000, 1000), "PLAYER TWO WINS");
             theBall.SendMessage("ResetBall", null, SendMessageOptions.RequireReceiver);
         }
-
-        if(gamePaused)
-        {
-            GUI.Label(new Rect(Screen.width/2 - 150, 200, 2000, 1000), "PAUSED");
-        }
-
     }
 }
