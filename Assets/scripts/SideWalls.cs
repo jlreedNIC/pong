@@ -1,5 +1,13 @@
+/***************************************************
+* Id: reed5204
+*
+* File: SideWalls.cs
+* Class: CS 383
+*
+* This class controls the scoring functions of the walls.
+****************************************************/
+
 using System.Collections;
-// using System.Collections.Generic;
 using UnityEngine;
 
 public class SideWalls : MonoBehaviour
@@ -16,6 +24,7 @@ public class SideWalls : MonoBehaviour
         
     }
 
+    // when the wall is hit with the ball, give points and restart the ball
     void OnTriggerEnter2D(Collider2D hitInfo)
     {
         if(hitInfo.name == "Ball")

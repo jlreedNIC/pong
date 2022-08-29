@@ -1,3 +1,12 @@
+/***************************************************
+* Id: reed5204
+*
+* File: GameManager.cs
+* Class: CS 383
+*
+* This class controls the game (ie scoring).
+****************************************************/
+
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -42,12 +51,14 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    // Shows the restart button and the scores
     void OnGUI()
     {
         GUI.skin = layout;
         GUI.Label(new Rect(Screen.width/2 - 150 -12, 20, 100, 100), "" + PlayerScore1);
         GUI.Label(new Rect(Screen.width/2 + 150 + 12, 20, 100, 100), "" + PlayerScore2);
 
+        // if restart button is pressed
         if(GUI.Button(new Rect(Screen.width/2 - 60, 35, 120, 53), "RESTART"))
         {
             PlayerScore1 = 0;
@@ -55,6 +66,7 @@ public class GameManager : MonoBehaviour
             theBall.SendMessage("RestartGame", 0.5f, SendMessageOptions.RequireReceiver);
         }
 
+        // if a player wins
         if(PlayerScore1 == winValue)
         {
             GUI.Label(new Rect(Screen.width/2 - 150, 200, 2000, 1000), "PLAYER ONE WINS");

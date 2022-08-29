@@ -1,3 +1,12 @@
+/***************************************************
+* Id: reed5204
+*
+* File: PlayerControls.cs
+* Class: CS 383
+*
+* This class controls the pong paddles.
+****************************************************/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,8 +17,8 @@ public class PlayerControls : MonoBehaviour
     public KeyCode moveDown = KeyCode.S;
 
     [Range(1,10)]
-    public float speed = 10.0f;
-    public float boundY = 2.25f;
+    public float speed = 10.0f;             // speed of paddles
+    public float boundY = 2.25f;            // paddles cannot move past the boundaries
     private Rigidbody2D rb2d;
 
     // Start is called before the first frame update
@@ -21,6 +30,7 @@ public class PlayerControls : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // check if game is paused to avoid input complications
         if(!Pause.isGamePaused)
         {
             // moving paddles up and down
