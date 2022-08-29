@@ -21,7 +21,7 @@ public class PlayerControls : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(!GameManager.gamePaused)
+        if(!Pause.isGamePaused)
         {
             // moving paddles up and down
             var vel = rb2d.velocity;
